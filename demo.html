@@ -16,8 +16,11 @@
 <body>
 <div class="container-fluid">
     <div class="row">
-        <div class="col">
+        <div class="col-lg-6 mx-auto">
             <div class="card">
+                <div class="card-title bg-primary">
+                    <p>ABC</p>
+                </div>
                 <div class="card-body">
                     <div id="fillme"></div>
                 </div>
@@ -33,7 +36,7 @@
             <p>This Website uses cockies to provide its service and functionallity.</p>
         </div>
         <div class="col-md-5 col-lg-3 btn-container">
-            <a class="btn btn-secondary btn-sm acceptcookies" href="https://cookiesandyou.com/" target="_blank">Learn more</a>
+            <a class="btn btn-secondary btn-sm" href="https://cookiesandyou.com/" target="_blank">Learn more</a>
             <button type="button" class="btn btn-block btn-primary btn-sm acceptcookies">
                 I agree
             </button>
@@ -46,8 +49,8 @@
 
 <!-- Only for the demo -->
 <script>
-    for (var i = 1; i <= 150; i++)
-        document.querySelector("#fillme").innerHTML += "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ";
+    for (var i = 1; i <= 5000; i++)
+        document.querySelector("#fillme").innerHTML += "ABC ";
 </script>
 
 <!-- Include cookiealert script -->

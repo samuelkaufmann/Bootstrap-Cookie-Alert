@@ -23,7 +23,7 @@
     // When clicking on the agree button, create a 1 year
     // cookie to remember user's choice and close the banner
     acceptCookies.addEventListener("click", function () {
-        setCookie("acceptCookies", true, 1);
+        setCookie("acceptCookies", true, 30);
         cookieAlert.classList.remove("show");
 
         // dispatch the accept event
@@ -36,10 +36,13 @@
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
         var expires = "expires=" + d.toUTCString();
         document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        console.log('cookie set');
+        console.log(document.cookie);
     }
 
     function getCookie(cname) {
         var name = cname + "=";
+        console.log(document.cookie);
         var decodedCookie = decodeURIComponent(document.cookie);
         var ca = decodedCookie.split(';');
         for (var i = 0; i < ca.length; i++) {

@@ -44,6 +44,7 @@
 
 .cookiealert a {
     text-decoration: none;
+    flex: 1;
 }
 
 .cookiealert .acceptcookies {
